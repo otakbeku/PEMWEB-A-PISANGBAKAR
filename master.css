@@ -1,0 +1,78 @@
+element.style {}
+body {
+    background-color: rgb(242, 237, 245);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+/*body h1 {
+text-align: center;
+}*/
+
+
+/*
+@media (min-width : size) digunakan untuk mengatur lebar dari container berdasarkan ukuran atau size dari browser/perangkat
+*/
+
+@media (min-width: 1200px) .container {
+    width: 1170px;
+}
+@media (min-width: 768px) .container {
+    width: 750px;
+}
+
+@media (min-width: 1200px) .navbar-header {
+    float : left;
+}
+@media (min-width: 768px) .navbar-header {
+    float : left;
+}
+
+
+/*Pseudo::before element
+.navbar-header:before {
+  display : table;
+  content : " ";
+}
+
+:after,:before {
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  box-sizing: border-box;
+}
+
+Pseudo::after element
+.navbar-header:after {
+  clear : both;
+}*/
+
+.navbar {
+
+}
+
+
+.navbar-header {
+  /*padding-top: 10px;*/
+  display: block;
+  font-size: 14px;
+}
+
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+form {
+    display: block;
+}
