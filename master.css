@@ -1,6 +1,6 @@
 element.style {}
 body {
-    background-color: rgb(242, 237, 245);
+    background-color: rgb(212, 209, 209);
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,17 +50,20 @@ Pseudo::after element
 }*/
 
 .navbar {
-
+background : rgb(83, 175, 174);
 }
 
 
 .navbar-header {
   /*padding-top: 10px;*/
+
   display: block;
   font-size: 14px;
 }
 
-
+.form-search {
+  padding-left: 10px;
+}
 
 .container {
     padding-right: 15px;
@@ -69,10 +72,15 @@ Pseudo::after element
     margin-left: auto;
 }
 .form-signin {
-    max-width: 330px;
+      max-width: 330px;
     padding: 15px;
     margin: auto;
 }
+
+.container .form-signin {
+  margin-top: 200px;
+}
 form {
+
     display: block;
 }
