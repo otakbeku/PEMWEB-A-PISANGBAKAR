@@ -153,10 +153,10 @@ bagian @media -awal
     font-size: 14px;
 }
 .navbar-nav {
-    margin: 0.5px 85px;
+    margin: 0.5px 35px;
 }
 .nav {
-    padding-left: 110px;
+    /*padding-left: 177px;*/
     margin-bottom: 0;
     list-style: none;
 }
@@ -173,7 +173,7 @@ bagian @media -awal
 }
 .form-control {
     display: block;
-    width: 100px;
+    width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;

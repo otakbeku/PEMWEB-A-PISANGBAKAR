@@ -5,11 +5,9 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
     padding-right: 250px;
 }
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -18,29 +16,26 @@
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #000;
+    background: rgb(83, 175, 174);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
-
 #page-content-wrapper {
     width: 100%;
     position: absolute;
     padding: 15px;
 }
-
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
 }
 
-/* Sidebar Styles */
+/* untuk sidebar */
 
 .sidebar-nav {
     position: absolute;
@@ -50,66 +45,111 @@
     padding: 0;
     list-style: none;
 }
-
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
-
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #ffffff;
 }
-
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
 }
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
     text-decoration: none;
 }
-
 .sidebar-nav > .sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
-
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #ffffff;
+    text-align: center;
 }
-
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
+.sidebar-nav > .avatar {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+}
+.sidebar-nav > .avatar #circle .user-pict {
+    width: 75%;
+    height: 75%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.sidebar-nav > .wrapper-dropdown-setting {
+    /* Size and position */
+    position: relative;
+    /* Enable absolute positioning for children and pseudo elements */
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    /* Styles */
+    background: #fff;
+    border-left: 5px solid grey;
+    cursor: pointer;
+    outline: none;
+}
+.sidebar-nav > .wrapper-dropdown-setting:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: grey transparent;
+}
+.sidebar-nav > .wrapper-dropdown-setting .dropdown-setting {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    right: 0px;
+    /* Styles */
+    background: white;
+    transition: all 0.3s ease-out;
+    list-style: none;
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*
+untuk mengatur ukuran yang di tampilkan pada browser
+*/
 
 @media(min-width:768px) {
     #wrapper {
         padding-right: 250px;
     }
-
     #wrapper.toggled {
         padding-right: 0;
     }
-
     #sidebar-wrapper {
         width: 250px;
     }
-
     #wrapper.toggled #sidebar-wrapper {
         width: 0;
     }
-
     #page-content-wrapper {
         padding: 20px;
         position: relative;
     }
-
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-left: 0;
