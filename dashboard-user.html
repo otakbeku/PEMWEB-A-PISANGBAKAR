@@ -6,27 +6,106 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Pisang Bakar : user</title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/side-menu.css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
-      <!-- bagian navbar -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
+                <!-- navbar bagian logo -->
                 <div class="navbar-header">
                     <button class="navbar-toggle collapsed" name="button">
                         <span id="sr-only"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">gambar/logo</a>
+                </div>
+                <!-- navbar bagian logo -->
+                <!-- navbar bagian kanan -->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a class="btn btn-default" href="#menu-toggle" id="menu-toggle" data-toggle="collapse">test</a>
+                        </li>
+                    </ul>
                     <!-- kolom search -->
-                    <form class="form-search" action="index.html" method="post">
-                      <label for="search-coloumn" class="sr-only"></label>
-                      <input class="kolom-search" type="search" name="search-coloumn" value="">
+                    <form class="navbar-form navbar-right" action="index.html" method="post">
+                        <label for="search-coloumn" class="sr-only"></label>
+                        <input class="form-control" type="text" name="search-coloumn" placeholder="Search...">
                     </form>
                     <!-- kolom search -->
                 </div>
+                <!--  navbar bagian kanan -->
             </div>
         </nav>
+        <div id="wrapper">
+            <!-- side wrapper -->
+            <div id="sidebar-wrapper">
+                <!-- <div class="sidebar-nav"> -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Start Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Shortcuts</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </div>
+            <!--  page content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>Simple Sidebar</h1>
+                            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the
+                                page content will be pushed off canvas.</p>
+                            <p>Make sure to keep all page content within the
+                                <code>#page-content-wrapper</code>.</p>
+                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page content -->
+        </div>
+        <!-- <body>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+
+        </div>
+      </div> -->
         <!-- bagian navbar -->
-      </body>
+
+        <!-- bagian navbar -->
+        <!--  bagian script -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js\jquery-1.12.3.js"></script>
+        <script>
+            $("#menu-toggle").click(function(e {e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+                $("#sidebar-wrapper").hide();}));
+        </script>
+        <!--  bagian script -->
+    </body>
 </html>
